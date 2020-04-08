@@ -11,7 +11,7 @@
 Watch this epic ipl final over btw MI & CSK with a pinch of Computer Vision.
 Click on the image given below to watch the complete video.
 ```
-[![Watch the video](https://github.com/AshishGusain17/MI_V-s_CSK/blob/master/images/show_readme.png?raw=true
+[![Watch the video](https://github.com/AshishGusain17/MI_V-s_CSK/blob/master/images/gif_readme.gif?raw=true
 )](https://www.youtube.com/watch?v=pnmmXlrncGo)
 
 ### Application working:
