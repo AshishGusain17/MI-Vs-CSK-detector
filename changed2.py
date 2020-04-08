@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import imutils
 
-frame = cv2.imread("im4.jpg")
+frame = cv2.imread("images/im2.jpg")
 print('original',frame.shape)
 cv2.imshow('original',frame)
 
@@ -12,6 +12,9 @@ cv2.imshow('original',frame)
 
 yellowLower = (14, 76, 6)
 yellowUpper = (34, 255, 255)
+
+blueLower = (109 , 50 , 6)
+blueUpper = (130 , 255, 255)
 
 
 print('frame',frame.shape)
@@ -28,7 +31,9 @@ print('hsv',hsv.shape)
 print()
 
 # create a mask containing 0 and 255 values only
-mask = cv2.inRange(hsv, yellowLower, yellowUpper)
+# mask = cv2.inRange(hsv, yellowLower, yellowUpper)
+mask = cv2.inRange(hsv, blueLower, blueUpper)
+
 mask = cv2.erode(mask, None, iterations=2)
 mask = cv2.dilate(mask, None, iterations=2)
 cv2.imshow('mask',imutils.resize(mask,width=250))

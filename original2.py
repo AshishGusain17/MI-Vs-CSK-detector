@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 original_image = cv2.imread("mi.jpg")
 hsv_original = cv2.cvtColor(original_image, cv2.COLOR_BGR2HSV)
-roi = cv2.imread("jersey1.jpg")
+roi = cv2.imread("images/jersey1.jpg")
 hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
 # hue, saturation, value = cv2.split(hsv_roi)
 # Histogram ROI

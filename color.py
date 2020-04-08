@@ -16,7 +16,7 @@ greenLower = (29, 86, 6)
 greenUpper = (64, 255, 255)
 pts = deque(maxlen=size)
 
-vs = cv2.VideoCapture('ball_tracking_example.mp4')
+vs = cv2.VideoCapture('./videos/ball_tracking_example.mp4')
 # vs = cv2.VideoCapture(0)
 time.sleep(2.0)
 
@@ -82,3 +82,12 @@ while True:
 
 vs.release()
 cv2.destroyAllWindows()
+
+
+
+
+
+
+
+
+
